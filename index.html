@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio AtalaaDf</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .active {
+            color: #3b82f6;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+
+    <nav class="fixed w-full bg-white/60 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-gray-800">Portofolio</div>
+                <div class="flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-blue-500 transition">Home</a>
+                    <a href="#tentang" class="nav-link text-gray-600 hover:text-blue-500 transition">About</a>
+                    <a href="#project" class="nav-link text-gray-600 hover:text-blue-500 transition">Project</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-blue-500 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <div class="w-48 h-48 mx-auto rounded-full mb-6 flex items-center justify-center text-6xl">
+                    <img src="gambar/gwehhh.jpeg" class="w-full h-full object-cover  rounded-full">
+                </div>
+            </div>
+
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-4">Halo, Saya AtalaaDf</h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8">Mahasiswa | Front-end Developer</p>
+            <a href="#contact" class="inline-block bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition">
+                Hubungi Saya
+            </a>
+        </div>
+    </section>
+
+    <!-- Tentang Saya Section -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Tentang Saya</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <div>
+                    <div class="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-6xl">
+                        <img src="gambar/gwehj.jpeg" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Perkenalkan, saya seorang mahasiswa yang passionate di bidang teknologi</h3>
+                    <p class="text-gray-600 mb-4">
+                        Saya adalah mahasiswa yang memiliki minat besar dalam pengembangan interface Website. 
+                        Saat ini saya sedang memperdalam kemampuan saya dalam HTML, CSS, JavaScript, dan Tailwind CSS.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        Saya senang belajar hal-hal baru dan selalu mencari kesempatan untuk mengembangkan diri. 
+                        Bergabung dengan unit kegiatan mahasiswa adalah salah satu langkah saya untuk terus berkembang.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+
+                        <div class="bg-blue-50 px-4 py-2 rounded">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+
+                        <div class="bg-blue-50 px-4 py-2 rounded">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+
+                        <div class="bg-blue-50 px-4 py-2 rounded">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+
+                        <div class="bg-blue-50 px-4 py-2 rounded">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Project Saya</h2>
+            <div class="grid gap-8 max-w-4xl mx-auto">
+                <!-- Project Card 1 -->
+                <div class="max-w-4xl mx-auto flex justify-center">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition w-full md:w-1/2">
+                        <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white text-4xl">
+                            <img src="gambar/srifoton.png" alt="Srifoton 2025" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Srifoton 2025</h3>
+                            <p class="text-gray-600 mb-4">Event IT terbesar dari Himpunan Mahasiswa Informatika Universitas Sriwijaya</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Next.js</span>
+                            </div>
+                            <a href="https://srifoton.hmifunsri.com/" class="text-blue-500 hover:text-blue-600">Lihat Project →</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Hubungi Saya</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                <div class="flex items-center space-x-4">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">
+                        <i class="fa-solid fa-envelope"></i> 
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600">Email</p>
+                        <a href="mailto:mataladaffaalfaris@gmail.com" class="text-gray-800 font-semibold hover:text-blue-500 transition" target="_blank">mataladaffaalfaris@gmail.com</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-3xl">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600">Instagram</p>
+                        <a href="https://instagram.com/atalaa_df" target="_blank" class="text-gray-800 font-semibold hover:text-blue-500 transition">@atalaa_df</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center text-3xl">
+                    <i class="fa-brands fa-linkedin"></i> 
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600">LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/mataladaffaalfaris/" target="_blank" class="text-gray-800 font-semibold hover:text-blue-500 transition">linkedin.com/in/mataladaffaalfaris</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-3xl">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600">GitHub</p>
+                        <a href="https://github.com/AtalaaDf" target="_blank" class="text-gray-800 font-semibold hover:text-blue-500 transition">github.com/AtalaaDf</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Portofolio AtalaaDf. All rights reserved.</p>
+            <p class="text-gray-400 mt-2"></p>
+        </div>
+    </footer>
+
+    <script>
+        // Active Navigation Link
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
