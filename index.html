@@ -1,196 +1,60 @@
-<!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio AtalaaDf</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .active {
-            color: #3b82f6;
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="Portfolio of AtalaaDf, a student and front-end developer.">
+    <title>AtalaaDf | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
-<body class="bg-gray-50">
+<body>
+    <header id="header">
+        <nav aria-label="Main navigation">
+            <a class="site-name" href="index.html">AtalaaDf</a>
+            <ul>
+                <li><a href="index.html#home" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav class="fixed w-full bg-white/60 backdrop-blur-md shadow-sm z-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold text-gray-800">Portofolio</div>
-                <div class="flex space-x-8">
-                    <a href="#home" class="nav-link text-gray-600 hover:text-blue-500 transition">Home</a>
-                    <a href="#tentang" class="nav-link text-gray-600 hover:text-blue-500 transition">About</a>
-                    <a href="#project" class="nav-link text-gray-600 hover:text-blue-500 transition">Project</a>
-                    <a href="#contact" class="nav-link text-gray-600 hover:text-blue-500 transition">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <main id="content">
+        <section id="home" class="home-intro" aria-labelledby="home-title">
+            <img class="profile-photo" src="gambar/gwehhh.jpeg" alt="Profile photo of AtalaaDf">
+            <h1 id="home-title">AtalaaDf</h1>
+            <p class="intro-text">I am a student with an interest in technology and front-end development.</p>
+            <p class="intro-role">Student | Front-end Developer</p>
+            <a class="button-link" href="#contact">Contact Me</a>
+        </section>
 
-    <!-- Home Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-16">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <div class="mb-8">
-                <div class="w-48 h-48 mx-auto rounded-full mb-6 flex items-center justify-center text-6xl">
-                    <img src="gambar/gwehhh.jpeg" class="w-full h-full object-cover  rounded-full">
-                </div>
-            </div>
+        <section id="skills" class="content-section" aria-labelledby="skills-title">
+            <h2 id="skills-title">Skills</h2>
+            <p>I am currently learning and practicing these tools:</p>
+            <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git and GitHub</li>
+            </ul>
+        </section>
 
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-4">Halo, I'm AtalaaDf</h1>
-            <p class="text-xl md:text-2xl text-gray-600 mb-8">Student | Front-end Developer</p>
-            <a href="#contact" class="inline-block bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition">
-                Contact Me
-            </a>
-        </div>
-    </section>
+        <section id="contact" class="content-section" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact</h2>
+            <ul class="contact-list">
+                <li><span>Email</span> <a href="mailto:mataladaffaalfaris@gmail.com">mataladaffaalfaris@gmail.com</a></li>
+                <li><span>Instagram</span> <a href="https://instagram.com/atalaa_df" target="_blank" rel="noopener noreferrer">@atalaa_df</a></li>
+                <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/mataladaffaalfaris/" target="_blank" rel="noopener noreferrer">mataladaffaalfaris</a></li>
+                <li><span>GitHub</span> <a href="https://github.com/AtalaaDf" target="_blank" rel="noopener noreferrer">AtalaaDf</a></li>
+            </ul>
+        </section>
+    </main>
 
-    <!-- Tentang Saya Section -->
-    <section id="tentang" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">About Me</h2>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-
-                <div>
-                    <div class="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-6xl">
-                        <img src="gambar/gwehj.jpeg" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Hello, I am a student who is passionate about technology.</h3>
-                    <p class="text-gray-600 mb-4">
-                        I am a student with a keen interest in website interface development. Currently, I am deepening my skills in HTML, CSS, JavaScript, and Tailwind CSS.
-                    </p>
-                    <p class="text-gray-600 mb-4">
-                        I am a member of the Google Developer Group On Campus at Sriwijaya University as a front-end development member.
-                    </p>
-                    <p class="text-gray-600 mb-4">
-                        I enjoy learning new things and am always looking for opportunities to develop myself. Joining student activity units is one of the steps I take to continue growing.
-                    </p>
-                    <div class="flex space-x-4 mt-6">
-
-                        <div class="bg-blue-50 px-4 py-2 rounded">
-                            <i class="fa-brands fa-html5"></i>
-                        </div>
-
-                        <div class="bg-blue-50 px-4 py-2 rounded">
-                            <i class="fa-brands fa-css3-alt"></i>
-                        </div>
-
-                        <div class="bg-blue-50 px-4 py-2 rounded">
-                            <i class="fa-brands fa-js"></i>
-                        </div>
-
-                        <div class="bg-blue-50 px-4 py-2 rounded">
-                            <i class="fa-brands fa-github"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Section -->
-    <section id="project" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">My Project</h2>
-            <div class="grid gap-8 max-w-4xl mx-auto">
-                <!-- Project Card 1 -->
-                <div class="max-w-4xl mx-auto flex justify-center">
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition w-full md:w-1/2">
-                        <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white text-4xl">
-                            <img src="gambar/srifoton.png" alt="Srifoton 2025" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Srifoton 2025</h3>
-                            <p class="text-gray-600 mb-4">The biggest IT event from the Sriwijaya University Informatics Student Association</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Next.js</span>
-                            </div>
-                            <a href="https://srifoton.hmifunsri.com/" class="text-blue-500 hover:text-blue-600">See Project →</a>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Contact Me</h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-                <div class="flex items-center space-x-4">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl">
-                        <i class="fa-solid fa-envelope"></i> 
-                    </div>
-                    <div>
-                        <p class="text-sm text-gray-600">Email</p>
-                        <a href="mailto:mataladaffaalfaris@gmail.com" class="text-gray-800 font-semibold hover:text-blue-500 transition" target="_blank">mataladaffaalfaris@gmail.com</a>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-3xl">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div>
-                        <p class="text-sm text-gray-600">Instagram</p>
-                        <a href="https://instagram.com/atalaa_df" target="_blank" class="text-gray-800 font-semibold hover:text-blue-500 transition">@atalaa_df</a>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center text-3xl">
-                    <i class="fa-brands fa-linkedin"></i> 
-                    </div>
-                    <div>
-                        <p class="text-sm text-gray-600">LinkedIn</p>
-                        <a href="https://www.linkedin.com/in/mataladaffaalfaris/" target="_blank" class="text-gray-800 font-semibold hover:text-blue-500 transition">linkedin.com/in/mataladaffaalfaris</a>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-3xl">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                    <div>
-                        <p class="text-sm text-gray-600">GitHub</p>
-                        <a href="https://github.com/AtalaaDf" target="_blank" class="text-gray-800 font-semibold hover:text-blue-500 transition">github.com/AtalaaDf</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; 2026 Portofolio AtalaaDf. All rights reserved.</p>
-            <p class="text-gray-400 mt-2"></p>
-        </div>
+    <footer id="footer">
+        <p>&copy; 2026 AtalaaDf. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Active Navigation Link
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
