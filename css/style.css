@@ -161,7 +161,6 @@ a {
 
 .skill-list li {
 	padding: 0.35rem 0.75rem;
-	border-left: 3px solid var(--coral);
 	background: var(--mint);
 	color: var(--green-dark);
 	font-weight: 700;
@@ -178,8 +177,8 @@ a {
 
 .contact-list li {
 	min-width: 0;
-	padding: 0.75rem 0;
-	border-bottom: 1px solid var(--line);
+	padding: 0.75rem;
+	border-left: 2px solid var(--line);
 	overflow-wrap: anywhere;
 }
 
